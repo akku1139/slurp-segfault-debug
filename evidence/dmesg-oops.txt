@@ -1,0 +1,6 @@
+1971:[99123.694887] slurp[1252005]: segfault at 0 ip 00007f66b3556c74 sp 00007ffe6bef3850 error 4 in libxkbcommon.so.0.13.2[3dc74,7f66b351d000+3c000] likely on CPU 6 (core 2, socket 0)
+1973:[99753.002798] xkbtest[1261909]: segfault at 8 ip 00007fd0b71e7d24 sp 00007fff23fc19a8 error 4 in libxkbcommon.so.0.13.2[37d24,7fd0b71b4000+3c000] likely on CPU 0 (core 0, socket 0)
+1975:[99760.951013] xkbtest3[1262064]: segfault at 8 ip 00007f87e5dc1d24 sp 00007fff2855a1d8 error 4 in libxkbcommon.so.0.13.2[37d24,7f87e5d8e000+3c000] likely on CPU 6 (core 2, socket 0)
+2015:[100438.841046] vkctl[1275383]: segfault at 8 ip 00007fa74f070f1a sp 00007ffd787f5e80 error 4 in libwayland-client.so.0.26.0[7f1a,7fa74f06c000+8000] likely on CPU 7 (core 3, socket 0)
+2017:[100444.514307] vkctl[1275463]: segfault at 8 ip 00007ff4384c2f1a sp 00007fff9034cf50 error 4 in libwayland-client.so.0.26.0[7f1a,7ff4384be000+8000] likely on CPU 0 (core 0, socket 0)
+2019:[100464.884470] slurp[1275817]: segfault at 0 ip 00007ff7ca0f3c74 sp 00007ffc783df5f0 error 4 in libxkbcommon.so.0.13.2[3dc74,7ff7ca0ba000+3c000] likely on CPU 2 (core 2, socket 0)

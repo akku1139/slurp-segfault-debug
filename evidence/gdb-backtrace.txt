@@ -1,0 +1,49 @@
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.archlinux.org>
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff7c8cc74 in xkb_state_update_mask () from /usr/lib/libxkbcommon.so.0
+#0  0x00007ffff7c8cc74 in xkb_state_update_mask () from /usr/lib/libxkbcommon.so.0
+No symbol table info available.
+#1  0x000055555555ad40 in keyboard_handle_modifiers (data=0x555555572470, wl_keyboard=0x555555571740, serial=10, mods_depressed=0, mods_latched=0, mods_locked=0, group=0) at main.c:354
+        seat = 0x555555572470
+#2  0x00007ffff7c47976 in ?? () from /usr/lib/libffi.so.8
+No symbol table info available.
+#3  0x00007ffff7c42f29 in ?? () from /usr/lib/libffi.so.8
+No symbol table info available.
+#4  0x00007ffff7c46706 in ffi_call () from /usr/lib/libffi.so.8
+No symbol table info available.
+#5  0x00007ffff7f7983a in ?? () from /usr/lib/libwayland-client.so.0
+No symbol table info available.
+#6  0x00007ffff7f7ab79 in ?? () from /usr/lib/libwayland-client.so.0
+No symbol table info available.
+#7  0x00007ffff7f7af8b in wl_display_dispatch_queue_pending () from /usr/lib/libwayland-client.so.0
+No symbol table info available.
+#8  0x00007ffff7f7f802 in wl_display_dispatch_queue_timeout () from /usr/lib/libwayland-client.so.0
+No symbol table info available.
+#9  0x00007ffff7f7f930 in wl_display_dispatch_queue () from /usr/lib/libwayland-client.so.0
+No symbol table info available.
+#10 0x000055555555cd0b in main (argc=1, argv=0x7fffffffeaf8) at main.c:1071
+        status = 0
+        result_str = 0x0
+        length = 140737342305024
+        stream = 0x555555567160
+        state = {running = true, edit_anchor = false, display = 0x55555556a700, registry = 0x55555556f2d0, shm = 0x55555556f450, compositor = 0x555555573350, layer_shell = 0x555555573470, xdg_output_manager = 0x5555555733c0, cursor_shape_manager = 0x0, outputs = {prev = 0x555555572c60, next = 0x555555572c60}, seats = {prev = 0x555555572488, next = 0x555555572488}, xkb_context = 0x55555556e9c0, colors = {background = 4294967104, border = 255, selection = 0, choice = 4294967104}, font_family = 0x55555555e33b "sans-serif", border_weight = 2, display_dimensions = false, single_point = false, restrict_selection = false, boxes = {prev = 0x7fffffffe968, next = 0x7fffffffe968}, fixed_aspect_ratio = false, aspect_ratio = 0, result = {x = 0, y = 0, width = 0, height = 0, label = 0x0, link = {prev = 0x0, next = 0x0}}}
+        opt = -1
+        format = 0x55555555e346 "%x,%y %wx%h\n"
+        output_boxes = false
+        w = -146042416
+        h = 32767
+        output = 0x7fffffffe910
+        seat = 0x7fffffffe918
+        output_tmp = 0x7ffff74d41f0
+        seat_tmp = 0x7ffff74d4660
+        box = 0x7ffff74b4ee0
+        box_tmp = 0x7ffff74d0850
+rdi            0x0                 0
+No symbol table info available.
